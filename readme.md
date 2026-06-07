@@ -131,21 +131,21 @@ The resulting feature set includes demographic characteristics (age, sex, bmi), 
 This selection balances predictive information and feature independence, reducing redundancy while maintaining clinically meaningful variables.
 
 * Correlation analysis
-![Correlation Map](image-1.png)
+![Correlation Map](./img/image-1.png)
 
 * Generating synthetic data for healthy patients
 Initial dataset had an uneven distribution between healthy people and CAD patients
-![Initial data set cath distribution](image-2.png)
+![Initial data set cath distribution](./img/image-2.png)
 
 Using CTGANSynthesizer model 129 synthetic data for healthy patients were created, balancing the distribution: 50% healthy people, 50% CAD patients.
 Real healthy people vs Synthetic healthy people distributions:
-![Real healthy people vs Synthetic healthy people distributions](image-3.png)
+![Real healthy people vs Synthetic healthy people distributions](./img/image-3.png)
 
 ### Patient Segmentation
 
 Patients are grouped into three clusters using K-Means clustering.
 
-![Patient Clusters](image-4.png)
+![Patient Clusters](./img/image-4.png)
 
 The resulting cluster assignment is transformed into:
 
@@ -210,7 +210,7 @@ Confusion matrices are used to analyze:
 Best Model: XGBoost with custom threshold of 0.13
 This model was chosen because it has Recall 100% an 0 False neagatives. It also had the best Precision of all models.
 
-![alt text](image.png)
+![alt text](./img/image.png)
 
 ## 🚀 Gradio Application
 
